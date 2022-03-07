@@ -1,0 +1,281 @@
+05:29:16 **** Rebuild of configuration Debug for project EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX1.o "..\\EX1.c" 
+gcc -o EX1.exe EX1.o 
+Info: Nothing to build for EX1
+Info: Nothing to build for EX1
+05:32:38 **** Rebuild of configuration Debug for project EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX2.o "..\\EX2.c" 
+gcc -o EX2.exe EX2.o 
+Info: Nothing to build for EX2
+Info: Nothing to build for EX2
+05:36:12 **** Rebuild of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX3.o "..\\EX3.c" 
+gcc -o EX3.exe EX3.o 
+Info: Nothing to build for EX3
+05:39:39 **** Rebuild of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:12:9: warning: missing terminating " character
+   12 |  printf("You entered Zero);
+      |         ^
+..\EX4.c:12:9: error: missing terminating " character
+   12 |  printf("You entered Zero);
+      |         ^~~~~~~~~~~~~~~~~~~
+..\EX4.c:13:1: error: expected expression before '}' token
+   13 | }
+      | ^
+..\EX4.c:12:9: error: expected ';' before '}' token
+   12 |  printf("You entered Zero);
+      |         ^
+      |         ;
+   13 | }
+      | ~        
+05:39:50 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+Info: Nothing to build for EX4
+05:42:37 **** Rebuild of configuration Debug for project EX5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX5.o "..\\EX5.c" 
+gcc -o EX5.exe EX5.o 
+Info: Nothing to build for EX5
+Info: Nothing to build for EX5
+Info: Nothing to build for EX5
+05:44:55 **** Rebuild of configuration Debug for project EX6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX6.o "..\\EX6.c" 
+..\EX6.c: In function 'main':
+..\EX6.c:9:14: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+    9 | printf("sum=%d");
+      |             ~^
+      |              |
+      |              int
+..\EX6.c:9:14: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+gcc -o EX6.exe EX6.o 
+05:45:06 **** Incremental Build of configuration Debug for project EX6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX6.o "..\\EX6.c" 
+gcc -o EX6.exe EX6.o 
+Info: Nothing to build for EX6
+05:49:59 **** Rebuild of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+..\EX7.c: In function 'main':
+..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%d",fact(num));
+      |                    ~^  ~~~~~~~~~
+      |                     |  |
+      |                     |  long long int
+      |                     int
+      |                    %I64d
+..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%d",fact(num));
+      |                    ~^  ~~~~~~~~~
+      |                     |  |
+      |                     |  long long int
+      |                     int
+      |                    %I64d
+gcc -o EX7.exe EX7.o 
+Info: Nothing to build for EX7
+Info: Nothing to build for EX7
+05:50:33 **** Incremental Build of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+..\EX7.c: In function 'main':
+..\EX7.c:19:22: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%ld",fact(num));
+      |                    ~~^  ~~~~~~~~~
+      |                      |  |
+      |                      |  long long int
+      |                      long int
+      |                    %I64d
+..\EX7.c:19:22: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%ld",fact(num));
+      |                    ~~^  ~~~~~~~~~
+      |                      |  |
+      |                      |  long long int
+      |                      long int
+      |                    %I64d
+gcc -o EX7.exe EX7.o 
+05:50:45 **** Incremental Build of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+..\EX7.c: In function 'main':
+..\EX7.c:19:22: warning: unknown conversion type character 'l' in format [-Wformat=]
+   19 |  printf("Factorial=%ll",fact(num));
+      |                      ^
+..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
+   19 |  printf("Factorial=%ll",fact(num));
+      |         ^~~~~~~~~~~~~~~
+..\EX7.c:19:22: warning: unknown conversion type character 'l' in format [-Wformat=]
+   19 |  printf("Factorial=%ll",fact(num));
+      |                      ^
+..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
+   19 |  printf("Factorial=%ll",fact(num));
+      |         ^~~~~~~~~~~~~~~
+gcc -o EX7.exe EX7.o 
+05:50:53 **** Incremental Build of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+..\EX7.c: In function 'main':
+..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%dl",fact(num));
+      |                    ~^   ~~~~~~~~~
+      |                     |   |
+      |                     int long long int
+      |                    %I64d
+..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%dl",fact(num));
+      |                    ~^   ~~~~~~~~~
+      |                     |   |
+      |                     int long long int
+      |                    %I64d
+gcc -o EX7.exe EX7.o 
+05:50:59 **** Incremental Build of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+..\EX7.c: In function 'main':
+..\EX7.c:19:21: warning: conversion lacks type at end of format [-Wformat=]
+   19 |  printf("Factorial=%l",fact(num));
+      |                     ^
+..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
+   19 |  printf("Factorial=%l",fact(num));
+      |         ^~~~~~~~~~~~~~
+..\EX7.c:19:21: warning: conversion lacks type at end of format [-Wformat=]
+   19 |  printf("Factorial=%l",fact(num));
+      |                     ^
+..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
+   19 |  printf("Factorial=%l",fact(num));
+      |         ^~~~~~~~~~~~~~
+gcc -o EX7.exe EX7.o 
+05:51:05 **** Incremental Build of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+..\EX7.c: In function 'main':
+..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%d",fact(num));
+      |                    ~^  ~~~~~~~~~
+      |                     |  |
+      |                     |  long long int
+      |                     int
+      |                    %I64d
+..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
+   19 |  printf("Factorial=%d",fact(num));
+      |                    ~^  ~~~~~~~~~
+      |                     |  |
+      |                     |  long long int
+      |                     int
+      |                    %I64d
+gcc -o EX7.exe EX7.o 
+05:51:28 **** Incremental Build of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+gcc -o EX7.exe EX7.o 
+Info: Nothing to build for EX7
+05:51:58 **** Incremental Build of configuration Debug for project EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
+gcc -o EX7.exe EX7.o 
+Info: Nothing to build for EX7
+05:59:01 **** Rebuild of configuration Debug for project EX8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
+..\EX8.c: In function 'main':
+..\EX8.c:25:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |            ~^             ~~~~
+      |             |             |
+      |             int           double
+      |            %f
+..\EX8.c:25:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |               ~^               ~~
+      |                |               |
+      |                double          int
+      |               %d
+..\EX8.c:25:19: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
+   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |                  ~^               ~~~~~~~~~~~~~~~~~~
+      |                   |               |
+      |                   double          int
+      |                  %d
+..\EX8.c:25:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |            ~^             ~~~~
+      |             |             |
+      |             int           double
+      |            %f
+..\EX8.c:25:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |               ~^               ~~
+      |                |               |
+      |                double          int
+      |               %d
+..\EX8.c:25:19: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
+   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |                  ~^               ~~~~~~~~~~~~~~~~~~
+      |                   |               |
+      |                   double          int
+      |                  %d
+..\EX8.c: In function 'calc':
+..\EX8.c:15:2: warning: control reaches end of non-void function [-Wreturn-type]
+   15 | }}
+      |  ^
+gcc -o EX8.exe EX8.o 
+05:59:24 **** Incremental Build of configuration Debug for project EX8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
+..\EX8.c: In function 'main':
+..\EX8.c:24:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |            ~^             ~~~~
+      |             |             |
+      |             int           double
+      |            %f
+..\EX8.c:24:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |               ~^               ~~
+      |                |               |
+      |                double          int
+      |               %d
+..\EX8.c:24:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |            ~^             ~~~~
+      |             |             |
+      |             int           double
+      |            %f
+..\EX8.c:24:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
+      |               ~^               ~~
+      |                |               |
+      |                double          int
+      |               %d
+..\EX8.c: In function 'calc':
+..\EX8.c:14:2: warning: control reaches end of non-void function [-Wreturn-type]
+   14 | }}
+      |  ^
+gcc -o EX8.exe EX8.o 
+05:59:50 **** Incremental Build of configuration Debug for project EX8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
+..\EX8.c: In function 'calc':
+..\EX8.c:14:2: warning: control reaches end of non-void function [-Wreturn-type]
+   14 | }}
+      |  ^
+gcc -o EX8.exe EX8.o 
+06:00:09 **** Incremental Build of configuration Debug for project EX8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
+gcc -o EX8.exe EX8.o 
+Info: Nothing to build for EX8
+06:00:38 **** Incremental Build of configuration Debug for project EX8 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
+gcc -o EX8.exe EX8.o 
+Info: Nothing to build for EX8
