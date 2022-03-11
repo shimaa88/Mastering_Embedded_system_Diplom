@@ -1,0 +1,176 @@
+Info: Nothing to build for EX3
+Info: Nothing to build for EX3
+22:51:59 **** Incremental Build of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX3.o "..\\EX3.c" 
+gcc -o EX3.exe EX3.o 
+Info: Nothing to build for EX3
+22:53:30 **** Incremental Build of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX3.o "..\\EX3.c" 
+gcc -o EX3.exe EX3.o 
+Info: Nothing to build for EX3
+22:53:59 **** Incremental Build of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX3.o "..\\EX3.c" 
+gcc -o EX3.exe EX3.o 
+Info: Nothing to build for EX3
+22:55:51 **** Incremental Build of configuration Debug for project EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX3.o "..\\EX3.c" 
+gcc -o EX3.exe EX3.o 
+Info: Nothing to build for EX3
+23:12:28 **** Rebuild of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:11:14: error: 'arr' undeclared (first use in this function); did you mean 'arr2'?
+   11 |  scanf("%f",&arr[i]);
+      |              ^~~
+      |              arr2
+..\EX4.c:11:14: note: each undeclared identifier is reported only once for each function it appears in
+23:12:44 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:11:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int *' [-Wformat=]
+   11 |  scanf("%f",&arr1[i]);
+      |         ~^  ~~~~~~~~
+      |          |  |
+      |          |  int *
+      |          float *
+      |         %d
+..\EX4.c:11:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int *' [-Wformat=]
+   11 |  scanf("%f",&arr1[i]);
+      |         ~^  ~~~~~~~~
+      |          |  |
+      |          |  int *
+      |          float *
+      |         %d
+gcc -o EX4.exe EX4.o 
+23:12:54 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:13:24 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:13:48 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:14:35 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:16:14 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:18:24 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:19:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 | for(int i=0,j=0;i<n,j<k;i++,j++)
+      |                    ^
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+Info: Nothing to build for EX4
+23:21:56 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:19:13: error: expected identifier or '(' before 'int'
+   19 | for(int i=0,int j=0;i<n,j<k;i++,j++)
+      |             ^~~
+..\EX4.c:19:25: error: 'j' undeclared (first use in this function)
+   19 | for(int i=0,int j=0;i<n,j<k;i++,j++)
+      |                         ^
+..\EX4.c:19:25: note: each undeclared identifier is reported only once for each function it appears in
+..\EX4.c:19:24: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 | for(int i=0,int j=0;i<n,j<k;i++,j++)
+      |                        ^
+23:22:08 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:19:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 | for(int i=0,j=0;i<n,j<k;i++,j++)
+      |                    ^
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:23:03 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:19:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 | for(int i=0,j=0;i<k,j<k;i++,j++)
+      |                    ^
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:23:53 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+..\EX4.c: In function 'main':
+..\EX4.c:19:20: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 | for(int i=0,j=0;i<n,j<k+1;i++,j++)
+      |                    ^
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+23:24:48 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+Info: Nothing to build for EX4
+Info: Nothing to build for EX4
+23:28:13 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file EX4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:30:08 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
+gcc -o EX4.exe EX4.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file EX4.exe: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+23:30:11 **** Incremental Build of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -o EX4.exe EX4.o 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file EX4.exe: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+23:33:45 **** Rebuild of configuration Debug for project EX4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\EX4.o" "..\\src\\EX4.c" 
+gcc -o EX4.exe "src\\EX4.o" 
+Info: Nothing to build for EX4
+23:38:12 **** Rebuild of configuration Debug for project EX5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX5.o "..\\EX5.c" 
+..\EX5.c: In function 'main':
+..\EX5.c:19:43: error: expected ')' before 'ii'
+   19 | printf("Number found at the location = %d"ii);
+      |                                           ^~
+      |                                           )
+..\EX5.c:19:41: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   19 | printf("Number found at the location = %d"ii);
+      |                                        ~^
+      |                                         |
+      |                                         int
+..\EX5.c:19:41: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+..\EX5.c:5:9: warning: variable 'ii' set but not used [-Wunused-but-set-variable]
+    5 | int n,k,ii;
+      |         ^~
+23:38:20 **** Incremental Build of configuration Debug for project EX5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX5.o "..\\EX5.c" 
+gcc -o EX5.exe EX5.o 
+Info: Nothing to build for EX5

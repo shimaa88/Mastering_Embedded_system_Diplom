@@ -1,281 +1,1310 @@
-05:29:16 **** Rebuild of configuration Debug for project EX1 ****
+Info: Nothing to build for test
+Info: Nothing to build for test
+05:53:12 **** Incremental Build of configuration Debug for project test ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX1.o "..\\EX1.c" 
-gcc -o EX1.exe EX1.o 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:107:60: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  107 | printf(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId);
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                                                            |
+      |                                                            unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:54:21 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:107:8: error: expected expression before 'if'
+  107 | printf(if(0==PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId));
+      |        ^~
+05:54:33 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:107:9: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  107 | printf(0==PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId);
+      |        ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         |
+      |         int
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'int'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:55:05 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:107:8: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  107 | printf(0==0);
+      |        ^~~~
+      |        |
+      |        int
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'int'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+05:55:33 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+05:55:46 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:56:21 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+05:56:45 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
 Info: Nothing to build for EX1
-Info: Nothing to build for EX1
-05:32:38 **** Rebuild of configuration Debug for project EX2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX2.o "..\\EX2.c" 
-gcc -o EX2.exe EX2.o 
 Info: Nothing to build for EX2
-Info: Nothing to build for EX2
-05:36:12 **** Rebuild of configuration Debug for project EX3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX3.o "..\\EX3.c" 
-gcc -o EX3.exe EX3.o 
 Info: Nothing to build for EX3
-05:39:39 **** Rebuild of configuration Debug for project EX4 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
-..\EX4.c: In function 'main':
-..\EX4.c:12:9: warning: missing terminating " character
-   12 |  printf("You entered Zero);
-      |         ^
-..\EX4.c:12:9: error: missing terminating " character
-   12 |  printf("You entered Zero);
-      |         ^~~~~~~~~~~~~~~~~~~
-..\EX4.c:13:1: error: expected expression before '}' token
-   13 | }
-      | ^
-..\EX4.c:12:9: error: expected ';' before '}' token
-   12 |  printf("You entered Zero);
-      |         ^
-      |         ;
-   13 | }
-      | ~        
-05:39:50 **** Incremental Build of configuration Debug for project EX4 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX4.o "..\\EX4.c" 
-gcc -o EX4.exe EX4.o 
 Info: Nothing to build for EX4
-Info: Nothing to build for EX4
-05:42:37 **** Rebuild of configuration Debug for project EX5 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX5.o "..\\EX5.c" 
-gcc -o EX5.exe EX5.o 
 Info: Nothing to build for EX5
-Info: Nothing to build for EX5
-Info: Nothing to build for EX5
-05:44:55 **** Rebuild of configuration Debug for project EX6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX6.o "..\\EX6.c" 
-..\EX6.c: In function 'main':
-..\EX6.c:9:14: warning: format '%d' expects a matching 'int' argument [-Wformat=]
-    9 | printf("sum=%d");
-      |             ~^
-      |              |
-      |              int
-..\EX6.c:9:14: warning: format '%d' expects a matching 'int' argument [-Wformat=]
-gcc -o EX6.exe EX6.o 
-05:45:06 **** Incremental Build of configuration Debug for project EX6 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX6.o "..\\EX6.c" 
-gcc -o EX6.exe EX6.o 
 Info: Nothing to build for EX6
-05:49:59 **** Rebuild of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-..\EX7.c: In function 'main':
-..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%d",fact(num));
-      |                    ~^  ~~~~~~~~~
-      |                     |  |
-      |                     |  long long int
-      |                     int
-      |                    %I64d
-..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%d",fact(num));
-      |                    ~^  ~~~~~~~~~
-      |                     |  |
-      |                     |  long long int
-      |                     int
-      |                    %I64d
-gcc -o EX7.exe EX7.o 
 Info: Nothing to build for EX7
-Info: Nothing to build for EX7
-05:50:33 **** Incremental Build of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-..\EX7.c: In function 'main':
-..\EX7.c:19:22: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%ld",fact(num));
-      |                    ~~^  ~~~~~~~~~
-      |                      |  |
-      |                      |  long long int
-      |                      long int
-      |                    %I64d
-..\EX7.c:19:22: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%ld",fact(num));
-      |                    ~~^  ~~~~~~~~~
-      |                      |  |
-      |                      |  long long int
-      |                      long int
-      |                    %I64d
-gcc -o EX7.exe EX7.o 
-05:50:45 **** Incremental Build of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-..\EX7.c: In function 'main':
-..\EX7.c:19:22: warning: unknown conversion type character 'l' in format [-Wformat=]
-   19 |  printf("Factorial=%ll",fact(num));
-      |                      ^
-..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
-   19 |  printf("Factorial=%ll",fact(num));
-      |         ^~~~~~~~~~~~~~~
-..\EX7.c:19:22: warning: unknown conversion type character 'l' in format [-Wformat=]
-   19 |  printf("Factorial=%ll",fact(num));
-      |                      ^
-..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
-   19 |  printf("Factorial=%ll",fact(num));
-      |         ^~~~~~~~~~~~~~~
-gcc -o EX7.exe EX7.o 
-05:50:53 **** Incremental Build of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-..\EX7.c: In function 'main':
-..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%dl",fact(num));
-      |                    ~^   ~~~~~~~~~
-      |                     |   |
-      |                     int long long int
-      |                    %I64d
-..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%dl",fact(num));
-      |                    ~^   ~~~~~~~~~
-      |                     |   |
-      |                     int long long int
-      |                    %I64d
-gcc -o EX7.exe EX7.o 
-05:50:59 **** Incremental Build of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-..\EX7.c: In function 'main':
-..\EX7.c:19:21: warning: conversion lacks type at end of format [-Wformat=]
-   19 |  printf("Factorial=%l",fact(num));
-      |                     ^
-..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
-   19 |  printf("Factorial=%l",fact(num));
-      |         ^~~~~~~~~~~~~~
-..\EX7.c:19:21: warning: conversion lacks type at end of format [-Wformat=]
-   19 |  printf("Factorial=%l",fact(num));
-      |                     ^
-..\EX7.c:19:9: warning: too many arguments for format [-Wformat-extra-args]
-   19 |  printf("Factorial=%l",fact(num));
-      |         ^~~~~~~~~~~~~~
-gcc -o EX7.exe EX7.o 
-05:51:05 **** Incremental Build of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-..\EX7.c: In function 'main':
-..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%d",fact(num));
-      |                    ~^  ~~~~~~~~~
-      |                     |  |
-      |                     |  long long int
-      |                     int
-      |                    %I64d
-..\EX7.c:19:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long long int' [-Wformat=]
-   19 |  printf("Factorial=%d",fact(num));
-      |                    ~^  ~~~~~~~~~
-      |                     |  |
-      |                     |  long long int
-      |                     int
-      |                    %I64d
-gcc -o EX7.exe EX7.o 
-05:51:28 **** Incremental Build of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-gcc -o EX7.exe EX7.o 
-Info: Nothing to build for EX7
-05:51:58 **** Incremental Build of configuration Debug for project EX7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX7.o "..\\EX7.c" 
-gcc -o EX7.exe EX7.o 
-Info: Nothing to build for EX7
-05:59:01 **** Rebuild of configuration Debug for project EX8 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
-..\EX8.c: In function 'main':
-..\EX8.c:25:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |            ~^             ~~~~
-      |             |             |
-      |             int           double
-      |            %f
-..\EX8.c:25:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
-   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |               ~^               ~~
-      |                |               |
-      |                double          int
-      |               %d
-..\EX8.c:25:19: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
-   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |                  ~^               ~~~~~~~~~~~~~~~~~~
-      |                   |               |
-      |                   double          int
-      |                  %d
-..\EX8.c:25:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |            ~^             ~~~~
-      |             |             |
-      |             int           double
-      |            %f
-..\EX8.c:25:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
-   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |               ~^               ~~
-      |                |               |
-      |                double          int
-      |               %d
-..\EX8.c:25:19: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
-   25 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |                  ~^               ~~~~~~~~~~~~~~~~~~
-      |                   |               |
-      |                   double          int
-      |                  %d
-..\EX8.c: In function 'calc':
-..\EX8.c:15:2: warning: control reaches end of non-void function [-Wreturn-type]
-   15 | }}
-      |  ^
-gcc -o EX8.exe EX8.o 
-05:59:24 **** Incremental Build of configuration Debug for project EX8 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
-..\EX8.c: In function 'main':
-..\EX8.c:24:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |            ~^             ~~~~
-      |             |             |
-      |             int           double
-      |            %f
-..\EX8.c:24:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
-   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |               ~^               ~~
-      |                |               |
-      |                double          int
-      |               %d
-..\EX8.c:24:13: warning: format '%c' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |            ~^             ~~~~
-      |             |             |
-      |             int           double
-      |            %f
-..\EX8.c:24:16: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
-   24 | printf("%f %c %f %f",num1,num2,op,calc(num1,num2,op));
-      |               ~^               ~~
-      |                |               |
-      |                double          int
-      |               %d
-..\EX8.c: In function 'calc':
-..\EX8.c:14:2: warning: control reaches end of non-void function [-Wreturn-type]
-   14 | }}
-      |  ^
-gcc -o EX8.exe EX8.o 
-05:59:50 **** Incremental Build of configuration Debug for project EX8 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
-..\EX8.c: In function 'calc':
-..\EX8.c:14:2: warning: control reaches end of non-void function [-Wreturn-type]
-   14 | }}
-      |  ^
-gcc -o EX8.exe EX8.o 
-06:00:09 **** Incremental Build of configuration Debug for project EX8 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
-gcc -o EX8.exe EX8.o 
 Info: Nothing to build for EX8
-06:00:38 **** Incremental Build of configuration Debug for project EX8 ****
+Info: Nothing to build for test
+05:57:34 **** Incremental Build of configuration Debug for project test ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o EX8.o "..\\EX8.c" 
-gcc -o EX8.exe EX8.o 
-Info: Nothing to build for EX8
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:57:44 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(1==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:57:53 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(1==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+05:58:05 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(1==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:58:29 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(1==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+05:58:45 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+05:59:07 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:59:17 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(2==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:59:44 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+05:59:53 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(1==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:00:01 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(1==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:01:33 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:01:50 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+06:02:01 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+Info: Nothing to build for test
+06:02:17 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:02:34 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:02:56 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:60: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 | printf(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId);
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                                                            |
+      |                                                            unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+..\test.c:111:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  111 | printf(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId);
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:03:27 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:113:1: error: expected expression before '}' token
+  113 | }
+      | ^
+06:03:43 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:9: warning: zero-length ms_printf format string [-Wformat-zero-length]
+  111 |  printf("");
+      |         ^~
+..\test.c:111:9: warning: zero-length ms_printf format string [-Wformat-zero-length]
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+06:07:19 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:07:29 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:07:48 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:110:60: warning: 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId' is used uninitialized in this function [-Wuninitialized]
+  110 | if(0==(PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId))
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:07:56 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:08:03 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:08:12 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:08:58 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:09:06 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:09:26 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+Info: Nothing to build for test
+Info: Nothing to build for test
+06:09:46 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+06:09:58 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+06:10:30 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:62: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[3].PduRDestPdu.PduRDestPduHandleId));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:10:40 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:62: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:11:37 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:10: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf(((int)PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          |
+      |          int
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'int'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:11:52 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  111 |  printf(((int*)PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |          ^
+..\test.c:111:10: warning: passing argument 1 of 'printf' from incompatible pointer type [-Wincompatible-pointer-types]
+  111 |  printf(((int*)PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          |
+      |          int *
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'int *'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:12:32 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c:64:2: error: field name not in record or union initializer
+   64 |  .PduRRoutingPaths=
+      |  ^
+..\test.c:64:2: note: (near initialization for 'PduR')
+..\test.c:66:5: error: 'PduR_PBConfigType' has no member named 'PduRRoutingPath'; did you mean 'PduRRoutingPaths'?
+   66 |    .PduRRoutingPath=
+      |     ^~~~~~~~~~~~~~~
+      |     PduRRoutingPaths
+..\test.c:69:7: error: field name not in record or union initializer
+   69 |       .PduRDestPdu=
+      |       ^
+..\test.c:69:7: note: (near initialization for 'PduR[0].PduRRoutingPaths.PduRRoutingPath')
+..\test.c:73:10: error: 'PduRRoutingPath_Type' has no member named 'PduRDestPduHandleId'
+   73 |         .PduRDestPduHandleId=0,
+      |          ^~~~~~~~~~~~~~~~~~~
+..\test.c:77:7: error: field name not in record or union initializer
+   77 |       .PduRSrcPdu=
+      |       ^
+..\test.c:77:7: note: (near initialization for 'PduR[0].PduRRoutingPaths.PduRRoutingPath')
+..\test.c:79:9: error: 'PduRRoutingPath_Type' has no member named 'PduRSourcePduHandleId'
+   79 |        .PduRSourcePduHandleId=0,
+      |         ^~~~~~~~~~~~~~~~~~~~~
+..\test.c:80:9: error: 'PduRRoutingPath_Type' has no member named 'PduRSrcPduUpTxConf'
+   80 |        .PduRSrcPduUpTxConf=true
+      |         ^~~~~~~~~~~~~~~~~~
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+   63 | {
+      | ^
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+..\test.c:83:6: error: extra brace group at end of initializer
+   83 |      {//from tp to com
+      |      ^
+..\test.c:83:6: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:85:7: error: extra brace group at end of initializer
+   85 |       {
+      |       ^
+..\test.c:85:7: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:93:7: error: extra brace group at end of initializer
+   93 |       {
+      |       ^
+..\test.c:93:7: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:83:6: warning: excess elements in struct initializer
+   83 |      {//from tp to com
+      |      ^
+..\test.c:83:6: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+   63 | {
+      | ^
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+..\test.c: In function 'main':
+..\test.c:111:14: error: '(PduR_PBConfigType *)&PduR' is a pointer; did you mean to use '->'?
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |              ^
+      |              ->
+06:12:41 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c:64:2: error: field name not in record or union initializer
+   64 |  .PduRRoutingPaths=
+      |  ^
+..\test.c:64:2: note: (near initialization for 'PduR')
+..\test.c:66:5: error: 'PduR_PBConfigType' has no member named 'PduRRoutingPath'; did you mean 'PduRRoutingPaths'?
+   66 |    .PduRRoutingPath=
+      |     ^~~~~~~~~~~~~~~
+      |     PduRRoutingPaths
+..\test.c:69:7: error: field name not in record or union initializer
+   69 |       .PduRDestPdu=
+      |       ^
+..\test.c:69:7: note: (near initialization for 'PduR[0].PduRRoutingPaths.PduRRoutingPath')
+..\test.c:73:10: error: 'PduRRoutingPath_Type' has no member named 'PduRDestPduHandleId'
+   73 |         .PduRDestPduHandleId=0,
+      |          ^~~~~~~~~~~~~~~~~~~
+..\test.c:77:7: error: field name not in record or union initializer
+   77 |       .PduRSrcPdu=
+      |       ^
+..\test.c:77:7: note: (near initialization for 'PduR[0].PduRRoutingPaths.PduRRoutingPath')
+..\test.c:79:9: error: 'PduRRoutingPath_Type' has no member named 'PduRSourcePduHandleId'
+   79 |        .PduRSourcePduHandleId=0,
+      |         ^~~~~~~~~~~~~~~~~~~~~
+..\test.c:80:9: error: 'PduRRoutingPath_Type' has no member named 'PduRSrcPduUpTxConf'
+   80 |        .PduRSrcPduUpTxConf=true
+      |         ^~~~~~~~~~~~~~~~~~
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+   63 | {
+      | ^
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+..\test.c:83:6: error: extra brace group at end of initializer
+   83 |      {//from tp to com
+      |      ^
+..\test.c:83:6: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:85:7: error: extra brace group at end of initializer
+   85 |       {
+      |       ^
+..\test.c:85:7: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:93:7: error: extra brace group at end of initializer
+   93 |       {
+      |       ^
+..\test.c:93:7: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:83:6: warning: excess elements in struct initializer
+   83 |      {//from tp to com
+      |      ^
+..\test.c:83:6: note: (near initialization for 'PduR[0].PduRRoutingPaths')
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+   63 | {
+      | ^
+..\test.c:63:1: warning: missing braces around initializer [-Wmissing-braces]
+..\test.c: In function 'main':
+..\test.c:111:14: error: '(PduR_PBConfigType *)&PduR' is a pointer; did you mean to use '->'?
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |              ^
+      |              ->
+06:12:53 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c:64:20: error: expected expression before ']' token
+   64 |  .PduRRoutingPaths[]=
+      |                    ^
+..\test.c:64:20: error: array index in non-array initializer
+..\test.c:64:20: note: (near initialization for 'PduR')
+..\test.c: In function 'main':
+..\test.c:111:62: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+06:13:06 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c:64:20: error: expected expression before ']' token
+   64 |  .PduRRoutingPaths[]=
+      |                    ^
+..\test.c:64:20: error: array index in initializer not of integer type
+..\test.c:64:20: note: (near initialization for 'PduR.PduRRoutingPaths')
+..\test.c: In function 'main':
+..\test.c:111:31: error: '(PduRRoutingPaths_Type *)&PduR.PduRRoutingPaths' is a pointer; did you mean to use '->'?
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |                               ^
+      |                               ->
+06:13:11 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c:64:20: error: expected expression before ']' token
+   64 |  .PduRRoutingPaths[]=
+      |                    ^
+..\test.c:64:20: error: array index in non-array initializer
+..\test.c:64:20: note: (near initialization for 'PduR')
+..\test.c: In function 'main':
+..\test.c:111:62: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+06:13:18 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:62: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+06:14:16 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c:66:21: error: expected expression before ']' token
+   66 |    .PduRRoutingPath[]=
+      |                     ^
+..\test.c:66:21: error: array index in initializer not of integer type
+..\test.c:66:21: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath')
+..\test.c:69:8: error: 'PduRDestPdu_Type' has no member named 'PduRDestPdu'
+   69 |       .PduRDestPdu=
+      |        ^~~~~~~~~~~
+..\test.c:70:7: warning: braces around scalar initializer
+   70 |       {
+      |       ^
+..\test.c:70:7: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test.c:73:9: error: field name not in record or union initializer
+   73 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test.c:73:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test.c:77:8: error: 'PduRDestPdu_Type' has no member named 'PduRSrcPdu'
+   77 |       .PduRSrcPdu=
+      |        ^~~~~~~~~~
+..\test.c:78:7: error: extra brace group at end of initializer
+   78 |       {
+      |       ^
+..\test.c:78:7: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu')
+..\test.c:78:7: warning: excess elements in struct initializer
+..\test.c:78:7: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu')
+..\test.c:84:8: error: 'PduRSrcPdu_Type' has no member named 'PduRDestPdu'
+   84 |       .PduRDestPdu=
+      |        ^~~~~~~~~~~
+..\test.c:85:7: warning: braces around scalar initializer
+   85 |       {
+      |       ^
+..\test.c:85:7: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRSrcPdu.PduRSourcePduHandleId')
+..\test.c:88:9: error: field name not in record or union initializer
+   88 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test.c:88:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRSrcPdu.PduRSourcePduHandleId')
+..\test.c:92:8: error: 'PduRSrcPdu_Type' has no member named 'PduRSrcPdu'
+   92 |       .PduRSrcPdu=
+      |        ^~~~~~~~~~
+..\test.c:93:7: warning: braces around scalar initializer
+   93 |       {
+      |       ^
+..\test.c:93:7: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRSrcPdu.PduRSrcPduUpTxConf')
+..\test.c:94:9: error: field name not in record or union initializer
+   94 |         .PduRSourcePduHandleId=1,
+      |         ^
+..\test.c:94:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRSrcPdu.PduRSrcPduUpTxConf')
+..\test.c:95:9: error: field name not in record or union initializer
+   95 |         .PduRSrcPduUpTxConf=true
+      |         ^
+..\test.c:95:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRSrcPdu.PduRSrcPduUpTxConf')
+..\test.c:95:29: warning: excess elements in scalar initializer
+   95 |         .PduRSrcPduUpTxConf=true
+      |                             ^~~~
+..\test.c:95:29: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRSrcPdu.PduRSrcPduUpTxConf')
+..\test.c: In function 'main':
+..\test.c:111:62: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+06:14:34 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+..\test.c: In function 'main':
+..\test.c:111:62: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  111 |  printf((PduR.PduRRoutingPaths.PduRRoutingPath[2].PduRDestPdu.PduRDestPduHandleId));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char
+In file included from ..\test.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test.exe test.o 
+06:21:11 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+Info: Nothing to build for test
+06:21:27 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+06:21:35 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test.o "..\\test.c" 
+gcc -o test.exe test.o 
+06:27:56 **** Rebuild of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:62:4: error: 'PduR_PBConfigType' has no member named 'PduRRoutingpaths'; did you mean 'PduRRoutingPaths'?
+   62 |   .PduRRoutingpaths=
+      |    ^~~~~~~~~~~~~~~~
+      |    PduRRoutingPaths
+..\test2.c:70:8: warning: braces around scalar initializer
+   70 |        {
+      |        ^
+..\test2.c:70:8: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:72:9: error: field name not in record or union initializer
+   72 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test2.c:72:9: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:73:9: error: field name not in record or union initializer
+   73 |         .PduRTransmissionConfirmation= true
+      |         ^
+..\test2.c:73:9: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:73:40: warning: excess elements in scalar initializer
+   73 |         .PduRTransmissionConfirmation= true
+      |                                        ^~~~
+..\test2.c:73:40: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:85:8: warning: braces around scalar initializer
+   85 |        {
+      |        ^
+..\test2.c:85:8: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:87:9: error: field name not in record or union initializer
+   87 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test2.c:87:9: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:88:9: error: field name not in record or union initializer
+   88 |         .PduRTransmissionConfirmation= true
+      |         ^
+..\test2.c:88:9: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:88:40: warning: excess elements in scalar initializer
+   88 |         .PduRTransmissionConfirmation= true
+      |                                        ^~~~
+..\test2.c:88:40: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId')
+06:29:18 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:62:4: error: 'PduR_PBConfigType' has no member named 'PduRRoutingpaths'; did you mean 'PduRRoutingPaths'?
+   62 |   .PduRRoutingpaths=
+      |    ^~~~~~~~~~~~~~~~
+      |    PduRRoutingPaths
+..\test2.c:70:8: warning: braces around scalar initializer
+   70 |        {
+      |        ^
+..\test2.c:70:8: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:72:9: error: field name not in record or union initializer
+   72 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test2.c:72:9: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:85:8: warning: braces around scalar initializer
+   85 |        {
+      |        ^
+..\test2.c:85:8: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:87:9: error: field name not in record or union initializer
+   87 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test2.c:87:9: note: (near initialization for 'PduR.PduRRoutingPaths[0].PduRRoutingPath[1].PduRDestPdu.PduRDestPduHandleId')
+06:31:07 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:62:4: error: 'PduR_PBConfigType' has no member named 'PduRRoutingpaths'; did you mean 'PduRRoutingPaths'?
+   62 |   .PduRRoutingpaths=
+      |    ^~~~~~~~~~~~~~~~
+      |    PduRRoutingPaths
+..\test2.c:65:5: error: field name not in record or union initializer
+   65 |     .PduRRoutingPath=
+      |     ^
+..\test2.c:65:5: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath')
+..\test2.c:70:8: warning: braces around scalar initializer
+   70 |        {
+      |        ^
+..\test2.c:70:8: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:72:9: error: field name not in record or union initializer
+   72 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test2.c:72:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:85:8: warning: braces around scalar initializer
+   85 |        {
+      |        ^
+..\test2.c:85:8: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][1].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:87:9: error: field name not in record or union initializer
+   87 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test2.c:87:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][1].PduRDestPdu.PduRDestPduHandleId')
+06:33:43 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:61:3: error: 'PduR_PBConfigType' has no member named 'PduRRoutingPathes'; did you mean 'PduRRoutingPaths'?
+   61 |  .PduRRoutingPathes=
+      |   ^~~~~~~~~~~~~~~~~
+      |   PduRRoutingPaths
+..\test2.c:71:8: warning: braces around scalar initializer
+   71 |        {
+      |        ^
+..\test2.c:71:8: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:73:9: error: field name not in record or union initializer
+   73 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test2.c:73:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:86:8: warning: braces around scalar initializer
+   86 |        {
+      |        ^
+..\test2.c:86:8: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][1].PduRDestPdu.PduRDestPduHandleId')
+..\test2.c:88:9: error: field name not in record or union initializer
+   88 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test2.c:88:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][1].PduRDestPdu.PduRDestPduHandleId')
+06:34:19 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:61:3: error: 'PduR_PBConfigType' has no member named 'PduRRoutingPathes'; did you mean 'PduRRoutingPaths'?
+   61 |  .PduRRoutingPathes=
+      |   ^~~~~~~~~~~~~~~~~
+      |   PduRRoutingPaths
+06:35:25 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:61:3: error: 'PduR_PBConfigType' has no member named 'PduRRoutingPathes'; did you mean 'PduRRoutingPaths'?
+   61 |  .PduRRoutingPathes=
+      |   ^~~~~~~~~~~~~~~~~
+      |   PduRRoutingPaths
+..\test2.c: In function 'main':
+..\test2.c:104:63: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  104 | {printf(PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRSrcPdu.PduRSourcePduHandleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               unsigned char
+In file included from ..\test2.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+06:35:42 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:61:3: error: 'PduR_PBConfigType' has no member named 'PduRRoutingPathes'; did you mean 'PduRRoutingPaths'?
+   61 |  .PduRRoutingPathes=
+      |   ^~~~~~~~~~~~~~~~~
+      |   PduRRoutingPaths
+..\test2.c: In function 'main':
+..\test2.c:104:63: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  104 | {printf(PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRSrcPdu.PduRSourcePduHandleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               unsigned char
+In file included from ..\test2.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+06:36:31 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c: In function 'main':
+..\test2.c:104:63: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  104 | {printf(PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRSrcPdu.PduRSourcePduHandleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               unsigned char
+In file included from ..\test2.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:39:07 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:73:9: error: field name not in record or union initializer
+   73 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test2.c:73:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRDestPdu')
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+..\test2.c:88:9: error: field name not in record or union initializer
+   88 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test2.c:88:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][1].PduRDestPdu')
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c: In function 'main':
+..\test2.c:104:63: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  104 | {printf(PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRSrcPdu.PduRSourcePduHandleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               unsigned char
+In file included from ..\test2.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+06:39:09 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:73:9: error: field name not in record or union initializer
+   73 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test2.c:73:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRDestPdu')
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+..\test2.c:88:9: error: field name not in record or union initializer
+   88 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test2.c:88:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0][1].PduRDestPdu')
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c:60:1: warning: missing braces around initializer [-Wmissing-braces]
+   60 | {
+      | ^
+......
+   73 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+   76 |       },
+      |       }
+......
+   88 |         .PduRDestPduHandleId=1,
+      |                              {
+   89 | 
+   90 |       },
+      |       }
+..\test2.c: In function 'main':
+..\test2.c:104:63: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  104 | {printf(PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRSrcPdu.PduRSourcePduHandleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               unsigned char
+In file included from ..\test2.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+06:39:31 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c: In function 'main':
+..\test2.c:104:63: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  104 | {printf(PduR.PduRRoutingPaths.PduRRoutingPath[0][0].PduRSrcPdu.PduRSourcePduHandleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               unsigned char
+In file included from ..\test2.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:380:48: note: expected 'const char * restrict' but argument is of type 'unsigned char'
+  380 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+Info: Nothing to build for test2
+06:40:59 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:41:08 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:45:16 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:45:30 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:46:16 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+..\test2.c:147:9: error: field name not in record or union initializer
+  147 |         .PduRDestPduHandleId=0,
+      |         ^
+..\test2.c:147:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[0].PduRDestPdu')
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+..\test2.c:162:9: error: field name not in record or union initializer
+  162 |         .PduRDestPduHandleId=1,
+      |         ^
+..\test2.c:162:9: note: (near initialization for 'PduR.PduRRoutingPaths.PduRRoutingPath[1].PduRDestPdu')
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+......
+  162 |         .PduRDestPduHandleId=1,
+      |                              {
+......
+  165 |       },
+      |       }
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+......
+  162 |         .PduRDestPduHandleId=1,
+      |                              {
+......
+  165 |       },
+      |       }
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+......
+  162 |         .PduRDestPduHandleId=1,
+      |                              {
+......
+  165 |       },
+      |       }
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+......
+  162 |         .PduRDestPduHandleId=1,
+      |                              {
+......
+  165 |       },
+      |       }
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+......
+  162 |         .PduRDestPduHandleId=1,
+      |                              {
+......
+  165 |       },
+      |       }
+..\test2.c:137:1: warning: missing braces around initializer [-Wmissing-braces]
+  137 | {
+      | ^
+......
+  147 |         .PduRDestPduHandleId=0,
+      |                              {
+......
+  150 |       },
+      |       }
+......
+  162 |         .PduRDestPduHandleId=1,
+      |                              {
+......
+  165 |       },
+      |       }
+06:46:28 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:46:40 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:48:36 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:48:44 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:49:34 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
+06:49:46 **** Incremental Build of configuration Debug for project test2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o test2.o "..\\test2.c" 
+gcc -o test2.exe test2.o 
+Info: Nothing to build for test2
