@@ -752,3 +752,13 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY org.eclipse.launchbar.core 2 0 2022-03-12 01:04:46.153
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-03-12 04:46:06.436
+!MESSAGE An internal error occurred during: "Updating Git status for repository Github".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.getRepository(IndexDiffCacheEntry.java:184)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$1(IndexDiffCacheEntry.java:179)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:524)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
